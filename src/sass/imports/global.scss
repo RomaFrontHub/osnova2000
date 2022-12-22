@@ -20,16 +20,19 @@
     width: 100%;
     max-width: 1495px;
     @media (max-width: $sm) {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     @media (max-width: $md) {
-        padding: 0 15px;
+        padding: 0 10px;
     }
     @media (max-width: $lg) {
         padding: 0 25px;
     }
     @media (max-width: $xl) {
-        padding: 0 40px;
+        padding: 0 25px;
+    }
+    @media (max-width: 1599px) {
+        padding: 0 25px;
     }
 }
 
@@ -252,9 +255,9 @@ dfn {
     font-style: italic;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    margin: 0;
 }
 
 mark {

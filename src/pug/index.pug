@@ -5,45 +5,47 @@ html(lang='en')
         .all
             include includes/header
 
+            include includes/adaptive
+
             main
-              section.services
+              section.templates
                 .container
-                  .services-all
-                    .services-all__item
+                  .templates-all
+                    a(href="/engineering.html").templates-all__item
                       .item-top
-                        img(src="img/menu-1.png", alt="")
+                        img(src="img/01-project-works.svg", alt="")
                       .item-back
-                        img(src="img/back-1.png", alt="")
+                        img(src="img/back-1.jpg", alt="")
                       .item-caption
-                        img.back-two(src="img/services-back-2.png", alt="")
-                        img.back-one(src="img/services-back-1.png", alt="")
+                        .back-one
+                        .back-two
                         h1 ПРОЕКТНІ РОБОТИ
-                    .services-all__item
+                    a(href="/yachts.html").templates-all__item
                       .item-top
-                        img(src="img/menu-2.png", alt="")
+                        img(src="img/02-yachts.svg", alt="")
                       .item-back
-                        img(src="img/back-2.png", alt="")
+                        img(src="img/back-2.jpg", alt="")
                       .item-caption
-                        img.back-two(src="img/services-back-2.png", alt="")
-                        img.back-one(src="img/services-back-1.png", alt="")
+                        .back-one
+                        .back-two
                         h1 яхти
-                    .services-all__item
+                    a(href="/tents.html").templates-all__item
                       .item-top
-                        img(src="img/menu-3.png", alt="")
+                        img(src="img/03-tents.svg", alt="")
                       .item-back
-                        img(src="img/back-3.png", alt="")
+                        img(src="img/back-3.jpg", alt="")
                       .item-caption
-                        img.back-two(src="img/services-back-2.png", alt="")
-                        img.back-one(src="img/services-back-1.png", alt="")
+                        .back-one
+                        .back-two
                         h1 тенти і чохли
-                    .services-all__item
+                    a(href="/aviation.html").templates-all__item
                       .item-top
-                        img(src="img/menu-4.png", alt="")
+                        img(src="img/04-aviation.svg", alt="")
                       .item-back
-                        img(src="img/back-4.png", alt="")
+                        img(src="img/back-4.jpg", alt="")
                       .item-caption
-                        img.back-two(src="img/services-back-2.png", alt="")
-                        img.back-one(src="img/services-back-1.png", alt="")
+                        .back-one
+                        .back-two
                         h1 авіація
 
             include includes/footer

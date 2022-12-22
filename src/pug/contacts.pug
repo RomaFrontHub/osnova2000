@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel='stylesheet', href='css/contacts.min.css')
+    body
+        .all
+            include includes/header
+
+            include includes/adaptive
+
+            main
+              //Contacts
+              section.contacts
+                .container
+                  .contacts-all
+                    h1.main-title КОНТАКТИ
+                    .contacts-all__main
+                      .main-info
+                        h2.contact-title Тов Основа-2000 
+                        .main-info__list
+                          .list-item
+                            img(src="img/location.svg", alt="")
+                            span 62364 Україна, <br> Харківська Область, Харківський Район, <br> смт Пересічне, вул. Кіенка, буд.16
+                          .list-item
+                            img(src="img/phone.svg", alt="")
+                            a(href="tel:+ 380504032936") + 38 050 403 29 36
+                          .list-item
+                            img(src="img/email.svg", alt="")
+                            a(href="mailto:office_osnova_2000@ukr.net") office_osnova_2000@ukr.net
+                      .main-connect
+                        h2.contact-title зв'яжіться з нами
+                        form(action="#")
+                          input(type="text" placeholder="Ваше ім’я *" required)
+                          input(type="email" placeholder="E-mail *" required)
+                          input(type="tel" placeholder="Номер телефону")
+                          textarea(placeholder="Ваше повідомлення")
+                          input(type="submit" value="Відправити")
+
+
+            include includes/footer
+
+        include includes/scripts
+        script(src="js/activelink.js")

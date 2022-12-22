@@ -1,0 +1,436 @@
+@import "imports/vars.scss";
+@import "imports/mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+//Planes
+.planes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  .section-title {
+    margin-top: 60px;
+  }
+  &-images {
+    display: flex;
+    column-gap: 40px;
+    img {
+      box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1599px) {
+    flex-direction: column;
+    margin-bottom: 33px;
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+    &-images {
+      row-gap: 33px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media (max-width: $md) {
+    flex-direction: column;
+    margin-bottom: 33px;
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+    &-images {
+      row-gap: 33px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+//Aviation
+.aviation {
+  padding: 50px 0 60px 0;
+  .container {
+    .aviation-all {
+      display: flex;
+      flex-direction: column;
+      &__projects {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+        .design-image {
+          img {
+            height: 100%;
+          }
+        }
+        .block {
+          padding: 35px 40px 35px 45px;
+          background-color: #f3f3f3;
+          border-radius: 25px;
+          max-width: 500px;
+          text-align: right;
+          &-item {
+            margin-bottom: 27px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .block-title {
+              font-size: 28px;
+              line-height: 38px;
+              font-weight: 700;
+              text-transform: uppercase;
+              color: #1f1f1f;
+              margin-bottom: 20px;
+            }
+            ul {
+              display: flex;
+              flex-direction: column;
+              li {
+                font-family: 'Source Sans Pro';
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 400;
+                color: #1f1f1f;
+              }
+            }
+          }
+        }
+        .certificates {
+          display: flex;
+          position: relative;
+          &-item {
+            &:last-child {
+              margin-top: 106px;
+              margin-left: -20px;
+            }
+          }
+        }
+      }
+      &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 63px;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    .container {
+      .aviation-all {
+        &__projects {
+          flex-wrap: wrap;
+          align-items: center;
+          .design-image {
+            width: 29%;
+          }
+          .block {
+            padding: 25px;
+            height: auto;
+            width: 35%;
+            &-item {
+              margin-bottom: 15px;
+              .block-title {
+                font-size: 22px;
+                margin-bottom: 13px;
+              }
+              ul {
+                li {
+                  font-size: 14px;
+                  line-height: 26px;
+                }
+              }
+            }
+          }
+          .certificates {
+            width: 32%;
+          }
+        }
+        &__gallery {
+          justify-content: center;
+          row-gap: 33px;
+          column-gap: 25px;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    .container {
+      .aviation-all {
+        &__projects {
+          flex-direction: column;
+          row-gap: 30px;
+          align-items: center;
+          margin-bottom: 50px;
+          .design-image {
+            max-width: 400px;
+            img {
+              height: 100%;
+            }
+          }
+          .block {
+            padding: 28px 25px 41px 15px;
+            max-width: 650px;
+            width: 100%;
+            height: auto;
+            &:first-child {
+              order: 1;
+            }
+            &:last-child {
+              order: 3;
+            }
+            &-item {
+              ul {
+                li {
+                  font-size: 16px;
+                  line-height: 28px;
+                }
+              }
+            }
+          }
+        }
+        &__gallery {
+          justify-content: center;
+          row-gap: 33px;
+        }
+      }
+    }
+  }
+}
+
+//Plane-two
+.plane-two {
+  background-color: #f3f3f3;
+  padding: 65px 0;
+  .container {
+    .plane-two__all {
+      display: flex;
+      flex-direction: column;
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    padding: 40px 0;
+    .container {
+      .plane-two__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 40px 0;
+    .container {
+      .plane-two__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+//Plane-three
+.plane-three {
+  padding: 65px 0;
+  .container {
+    .plane-three__all {
+      display: flex;
+      flex-direction: column;
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    padding: 40px 0;
+    .container {
+      .plane-three__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 40px 0;
+    .container {
+      .plane-three__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+//Plane-four
+.plane-four {
+  background-color: #f3f3f3;
+  padding: 60px 0;
+  .container {
+    .plane-four__all {
+      display: flex;
+      flex-direction: column;
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    padding: 40px 0;
+    .container {
+      .plane-four__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 40px 0;
+    .container {
+      .plane-four__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+//Plane-five
+.plane-five {
+  padding: 60px 0;
+  .container {
+    .plane-five__all {
+      display: flex;
+      flex-direction: column;
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    padding: 40px 0;
+    .container {
+      .plane-five__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 40px 0;
+    .container {
+      .plane-five__all {
+        .gallery {
+          flex-wrap: wrap;
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+//Materials
+.materials {
+  padding: 60px 0 97px 0;
+  .container {
+    .materials-all {
+      display: flex;
+      flex-direction: column;
+      .section-title {
+        margin-bottom: 65px;
+      }
+      &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 60px;
+        img {
+          box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1599px) {
+    .container {
+      .materials-all {
+        &__gallery {
+          column-gap: 30px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    padding: 40px 0 60px 0;
+    .container {
+      .materials-all {
+        .section-title {
+          margin-bottom: 60px;
+        }
+        &__gallery {
+          row-gap: 33px;
+          column-gap: 20px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

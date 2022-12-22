@@ -1,6 +1,10 @@
 $(function() {
-    $('.menu-wrapper').on('click', function() {
-        $('.hamburger-menu').toggleClass('animate');
-        $('.adaptive').slideToggle();
+    $('.header-all__burger').on('click', function() {
+      $('.adaptive').addClass('show');
+      $('.adaptive').removeClass('hide');
+    });
+    $('.close-adaptive').on('click', function() {
+      $('.adaptive').addClass('hide');
+      $('.adaptive').removeClass('show');
     });
 });
