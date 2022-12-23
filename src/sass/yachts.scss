@@ -78,6 +78,7 @@ body {
           flex-direction: column;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
           }
           ul {
             display: flex;
@@ -259,6 +260,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -353,6 +355,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -449,6 +452,7 @@ body {
           margin-bottom: 70px;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
           }
           ul {
             display: flex;
@@ -549,6 +553,7 @@ body {
             width: 100%;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -593,6 +598,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -654,6 +660,10 @@ body {
           flex-direction: column;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
+            @media (min-width: 1025px) {
+              margin-top: 60px!important;
+            }
           }
           ul {
             display: flex;
@@ -713,6 +723,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -756,6 +767,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -819,6 +831,10 @@ body {
           flex-direction: column;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
+            @media (min-width: 1025px) {
+              margin-top: 60px!important;
+            }
           }
           ul {
             display: flex;
@@ -880,6 +896,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -923,6 +940,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -985,6 +1003,10 @@ body {
           flex-direction: column;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
+            @media (min-width: 1025px) {
+              margin-top: 60px!important;
+            }
           }
           ul {
             display: flex;
@@ -1046,6 +1068,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -1089,6 +1112,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;
@@ -1152,6 +1176,7 @@ body {
           flex-direction: column;
           .section-title {
             margin-bottom: 60px;
+            margin-top: 60px;
           }
           ul {
             display: flex;
@@ -1255,6 +1280,7 @@ body {
             margin-bottom: 30px;
             .section-title {
               margin-bottom: 50px;
+              margin-top: 0;
             }
             ul {
               row-gap: 6px;

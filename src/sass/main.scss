@@ -69,10 +69,10 @@ body {
   display: none;
   @media (max-width: $md) {
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     width: 100%;
-    z-index: 3;
+    z-index: 9999;
     height: 400px;
     padding: 17px 12px 12px 12px;
     left: -100%;
@@ -119,10 +119,24 @@ body {
   }
 }
 
+main {
+  margin-top: 115px;
+  @media (min-width: 768px) and (max-width: $xl) {
+    margin-top: 85px;
+  }
+  @media (max-width: $md) {
+    margin-top: 70px;
+  }
+}
+
 //Header
 .header {
   padding: 11px 0 14px 0;
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.07);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9998;
   .container {
     .header-all {
       display: flex;
@@ -355,7 +369,6 @@ body {
         &:hover {
           .item-back {
             img {
-              transition: 1s;
               transform: scale(1.3);
             }
           }
@@ -404,6 +417,9 @@ body {
         }
         .item-back {
           overflow: hidden;
+          img {
+            transition: 1s;
+          }
         }
         .item-caption {
           display: flex;

@@ -830,6 +830,7 @@ body {
         display: flex;
         height: 100%;
         align-items: flex-end;
+        margin-top: 60px;
         .section-title {
           color: #a76281;
           &::after {
@@ -875,6 +876,7 @@ body {
         flex-direction: column;
         &__caption {
           margin-bottom: 60px;
+          margin-top: 0;
           img {
             margin-left: 15px;
             width: 24px;
