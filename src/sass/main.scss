@@ -57,6 +57,40 @@ body {
   }
 }
 
+//Back to top
+#button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1e467f;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 9997;
+  cursor: pointer;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  img {
+    width: 20px;
+    transform: rotate(180deg);
+  }
+  @media (max-width: $md) {
+    width: 40px;
+    height: 40px;
+    img {
+      width: 15px;
+    }
+  }
+}
+#button.show-button {
+  opacity: 1;
+  visibility: visible;
+}
+
 .show {
   left: 0!important;
 }
